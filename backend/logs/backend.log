@@ -1,0 +1,12 @@
+2025-09-18 12:19:46,567 - INFO - Phish reported:  | Detected: False
+2025-09-18 12:19:52,152 - INFO - Phish reported: http://localhost:3000/ | Detected: False
+2025-09-18 12:25:59,467 - INFO - Login attempt: user
+2025-09-18 12:25:59,467 - INFO - MFA challenge generated for user
+2025-09-18 12:33:08,189 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 12:34:24,226 - INFO - Login attempt: user
+2025-09-18 12:34:24,226 - INFO - MFA challenge generated for user
+2025-09-18 12:34:25,929 - INFO - Login attempt: user
+2025-09-18 12:34:25,929 - INFO - MFA challenge generated for user
+2025-09-18 12:35:22,496 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 12:35:23,097 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 12:35:36,673 - INFO - Disconnected from database sqlite:///./backend.db
