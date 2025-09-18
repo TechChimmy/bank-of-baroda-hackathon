@@ -10,3 +10,84 @@
 2025-09-18 12:35:22,496 - INFO - Disconnected from database sqlite:///./backend.db
 2025-09-18 12:35:23,097 - INFO - Connected to database sqlite:///./backend.db
 2025-09-18 12:35:36,673 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 12:35:37,227 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 12:37:06,331 - INFO - Login attempt: user
+2025-09-18 12:37:06,331 - INFO - MFA challenge generated for user
+2025-09-18 12:37:14,712 - WARNING - Invalid MFA token for user
+2025-09-18 12:37:20,635 - INFO - Phish reported: hmhth.com | Detected: False
+2025-09-18 12:37:39,281 - INFO - Login attempt: user
+2025-09-18 12:37:39,281 - INFO - MFA challenge generated for user
+2025-09-18 12:37:47,712 - WARNING - Invalid MFA token for user
+2025-09-18 12:37:54,632 - INFO - Phish reported: fdsgaggrd.com | Detected: False
+2025-09-18 13:32:23,521 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 13:59:25,741 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:00:07,555 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:01:41,740 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:07:30,937 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:07:36,953 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:07:37,564 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:07:42,047 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:07:42,707 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:07:52,327 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:07:52,885 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:17:59,122 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:19:18,789 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:19:19,415 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:20:08,657 - INFO - Register attempt: alice
+2025-09-18 14:20:11,043 - INFO - Register attempt: alice
+2025-09-18 14:20:11,984 - INFO - Register attempt: alice
+2025-09-18 14:20:33,296 - INFO - Register attempt: alice
+2025-09-18 14:26:50,073 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:26:50,665 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:35:28,495 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:35:29,173 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:36:44,549 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:36:45,098 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:37:17,406 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:37:18,282 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:44:19,892 - INFO - Login attempt: user
+2025-09-18 14:45:01,818 - INFO - Phish reported: http://127.0.0.1:8000/docs#/ | Detected: False
+2025-09-18 14:45:04,419 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:45:05,042 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 14:47:01,250 - INFO - Login attempt: user
+2025-09-18 14:47:29,360 - INFO - Register attempt: user
+2025-09-18 14:48:36,759 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 14:48:37,370 - INFO - Connected to database sqlite:///./backend.db
+2025-09-18 15:33:18,483 - INFO - Login attempt: alice
+2025-09-18 15:33:45,504 - INFO - Register attempt: alice
+2025-09-18 15:33:45,506 - ERROR - Register failed for alice: no such column: users.mfa_type
+Traceback (most recent call last):
+  File "E:\bob\backend\app.py", line 73, in register
+    existing_user = await database.fetch_one(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+        models.users.select().where(models.users.c.username == req.username)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\bob\backend\venv\Lib\site-packages\databases\core.py", line 182, in fetch_one
+    return await connection.fetch_one(query, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bob\backend\venv\Lib\site-packages\databases\core.py", line 299, in fetch_one
+    return await self._connection.fetch_one(built_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bob\backend\venv\Lib\site-packages\databases\backends\sqlite.py", line 118, in fetch_one
+    async with self._connection.execute(query_str, args) as cursor:
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\bob\backend\venv\Lib\site-packages\aiosqlite\context.py", line 41, in __aenter__
+    self._obj = await self._coro
+                ^^^^^^^^^^^^^^^^
+  File "E:\bob\backend\venv\Lib\site-packages\aiosqlite\core.py", line 183, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bob\backend\venv\Lib\site-packages\aiosqlite\core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "E:\bob\backend\venv\Lib\site-packages\aiosqlite\core.py", line 105, in run
+    result = function()
+sqlite3.OperationalError: no such column: users.mfa_type
+2025-09-18 15:34:56,297 - INFO - Disconnected from database sqlite:///./backend.db
+2025-09-18 15:34:57,877 - INFO - Connected to database sqlite:///./backend/backend.db
+2025-09-18 15:35:20,680 - INFO - Disconnected from database sqlite:///./backend/backend.db
+2025-09-18 15:35:21,298 - INFO - Connected to database sqlite:///./backend/backend.db
+2025-09-18 15:36:01,932 - INFO - Disconnected from database sqlite:///./backend/backend.db
+2025-09-18 15:36:22,161 - INFO - Connected to database sqlite:///./backend/backend.db

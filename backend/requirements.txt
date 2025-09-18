@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+fido2
+databases[sqlite]
+aiosqlite
+sqlalchemy
+passlib[bcrypt]
+pydantic
+python-multipart
+pillow
+pypdf2
+scikit-learn
+numpy
+pandas

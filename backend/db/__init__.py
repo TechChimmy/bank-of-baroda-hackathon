@@ -1,6 +1,6 @@
 from databases import Database
 
-DATABASE_URL = "sqlite:///./backend.db"
+DATABASE_URL = "sqlite:///./backend/backend.db"
 database = Database(DATABASE_URL)
 
 async def connect():
